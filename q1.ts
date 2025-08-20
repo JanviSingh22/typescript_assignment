@@ -9,3 +9,5 @@ function greetUser(user) {
 }
 
 const user: User = { firstName: "Sara", lastName: "Ali" };
+
+console.log(greetUser(user))

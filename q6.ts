@@ -24,3 +24,7 @@ function getOrderSummary(order: Readonly<Order>): string {
   return `${order.customer} - ${order.status}: ${order.items.length} items`;
 }
 
+const newOrder = createOrder("Alice",["Book","Pen"]);
+const updatedOrder = updateOrder(newOrder,{status:"shipped"});
+
+console.log(getOrderSummary(updatedOrder));

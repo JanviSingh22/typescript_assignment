@@ -20,3 +20,7 @@ function processTask(task: Task): string {
     throw new Error("Unhandled task type");
   }
 }
+for (const task of tasks){
+console.log(processTask(task));
+
+}
