@@ -11,3 +11,5 @@ const products: Product[] = [
 function getProductNames(items: Product[]): string[] {
   return items.map(item => item.name);
 }
+
+console.log(getProductNames(products));
